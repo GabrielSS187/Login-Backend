@@ -28,9 +28,9 @@ export class VerifyIfUserExist extends CustomError {
 };
 
 export class VerifySpacesPassword extends CustomError {
-  constructor ( public password: string ) {
+  constructor () {
     super (
-      `A senha passada não pode conter espaços em branco: ( ${password} )!.`, 
+      `A senha passada não pode conter espaços em branco!.`, 
         406
       )
   };
