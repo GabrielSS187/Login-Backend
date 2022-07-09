@@ -3,7 +3,7 @@ import { CustomError } from "../CustomError";
 export class VerifyInformationsRequest extends CustomError {
   constructor () {
     super (
-      "Verifique si uma dessas informações não estaõ faltando: ( name, email, password )!", 
+      "Verifique si uma dessas informações não estão faltando: ( name, email, password )!", 
         406
       )
   };
@@ -39,7 +39,7 @@ export class VerifySpacesPassword extends CustomError {
 export class VerifyPasswordQuantityLine extends CustomError {
   constructor ( public password: string ) {
     super (
-      `A senha deve ter no mínimo 6 caracteres. Sua senha possui: ( ${password.length} )!.`, 
+      `A sua senha não pode ser menor que 8 caracteres. Sua senha possui: ( ${password.length} )!.`, 
         406
       )
   };

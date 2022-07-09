@@ -3,7 +3,7 @@ import { CustomError } from "../CustomError";
 export class VerifyInformationsRequest extends CustomError {
   constructor () {
     super (
-      "Verifique si não esta faltando algúma dessas informações: ( email, password )!.", 
+      "Verifique si não estar faltando algúma dessas informações: ( email, password )!.", 
       406
       );
   };
@@ -12,7 +12,7 @@ export class VerifyInformationsRequest extends CustomError {
 export class VerifyIfExistUser extends CustomError {
   constructor ( public email: string ) {
     super (
-      `Nenhúm usuário com esse email: ( ${email} ), foi encontrado!.`, 
+      `Nenhum usuário com esse email: ( ${email} ), foi encontrado!.`, 
       404
       );
   };
